@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    padding-top:15px;
+    text-align: center;
+    color:white;
+}
+
+.logo {
+    width: 100px;
+    padding-bottom: 15px;
+}
+
+body {
+    font-family:"Lucida Sans Typewriter";
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-image: url("images/Hogwarts.png");
+}
+
+.defaultContainer {
+    border: 1px solid white;
+    text-align: center;
+    padding:55px 45px;
+    width: 90%; 
+    margin: auto; 
+    color:white;
+}
+h2 {
+  padding-bottom: 30px;
+}
+
+p {
+    color:White;
+    font-size: 30px;
+    padding-bottom:55px;
+}
+
+.startButton, .submitButton, .nextButton, .restartButton {
+    background-color: #9a634f;
+    border:1px solid white;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 15px 35px;
+    
+}
+
+.submitButton {
+  margin-top:15px;
+}
+
+.startButton:hover, .submitButton:hover, .nextButton:hover, .restartButton:hover {
+      background-color:white;
+      color: #9a634f;
+}    
+
+footer {
+    color:white;
+    text-align: center;
+}
+
+#questionForm, #incorrectFeedback, #correctFeedback, #endPage{
+  display: none;
+}
+
+footer li {
+ display: inline-block;
+ padding: 150px 5px;
+ font-size: 25px;
+}
+
+fieldset {
+    border:none;
+}
+
+fieldset div {
+  text-align:left;
+  margin-left:225px;
+}
+
+input[type=radio] {
+    flex: 0 0 auto;
+    margin-right: 10px;
+}
+
+
+@media only screen and (max-width:800px) { 
+    .defaultContainer {
+        border: 1px solid white; 
+        width: 90%; 
+        padding:45px 45px;
+    }
+}
+
+@media only screen and (max-width:365px) { 
+    footer li {
+      padding: 15px 15px;
+    }
+}

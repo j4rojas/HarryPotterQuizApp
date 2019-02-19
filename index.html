@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Harry Potter Trivia</title>
+        <!-- Responsive viewport tag, tells small screens that it's responsive -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Normalize.css, a cross-browser reset file -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+        <link rel="stylesheet" href="main.css" />  
+    </head>
+    <body>
+        <header role="banner">             
+            <h1>Harry Potter Trivia!</h1>              
+            <img class="logo" src="images/deadlyHallows.png" alt="deadly hallows icon"/>
+        </header>
+        <main role="main">
+            <section id="startPage" class="defaultContainer">
+                <h2>Ready to test your wizard knowledge?</h2>
+                <button type="button" class="startButton">Let's start</button>
+            </section>
+            <section id="question" class ="defaultContainer">
+            </section>  
+            <section id="incorrectFeedback" class="defaultContainer">
+              <h2>Sorry that's wrong, the correct answer is: </h2>
+              <p class= "incorrectFeedbackText"></p>
+              <form>
+                    <fieldset>                      
+                        <button type="button" class="nextButton">Next</button>
+                    </fieldset>
+                </form>
+            </section>
+            <section id="correctFeedback" class="defaultContainer">
+              <h2>That's correct!</h2>
+              <form>
+                    <fieldset>                      
+                        <button type="button" class="nextButton">Next</button>
+                    </fieldset>
+                </form>
+            </section>
+            <section id="endPage" class="defaultContainer">
+              <h2>Your score is: <span class="totalScore"></span> </h2>
+              <form>
+                    <fieldset>                      
+                        <button type="button" class="restartButton">Restart Quiz</button>
+                    </fieldset>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <ul>
+                <li>Question: <span class="questionNumber">0</span>/10</li>
+                <li>Score: <span class="currentScore">0</span></li>
+            </ul>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="index.js"></script>
+    </body>
+</html>
